@@ -78,14 +78,15 @@ namespace DataEditorX.Core.Info
 			CardType.TYPE_FUSION,
 			CardType.TYPE_XYZ,
 			CardType.TYPE_SYNCHRO,
-			CardType.TYPE_PENDULUM,
+//		    CardType.TYPE_SPSUMMON,
+        	CardType.TYPE_PENDULUM,
 			
 			CardType.TYPE_SPIRIT,
 			CardType.TYPE_UNION,
 			CardType.TYPE_DUAL,
 			CardType.TYPE_FLIP,
 			CardType.TYPE_TOON,
-		};
+        };
 		public static readonly CardType[] TYPE1_10 = {
 			CardType.TYPE_TOKEN,
 			CardType.TYPE_LINK,
@@ -93,63 +94,65 @@ namespace DataEditorX.Core.Info
 			CardType.TYPE_FUSION,
 			CardType.TYPE_XYZ,
 			CardType.TYPE_SYNCHRO,
-			CardType.TYPE_PENDULUM,
+//          CardType.TYPE_SPSUMMON,
+            CardType.TYPE_PENDULUM,
 			
 			CardType.TYPE_SPIRIT,
 			CardType.TYPE_UNION,
 			CardType.TYPE_DUAL,
 			CardType.TYPE_FLIP,
 			CardType.TYPE_TOON,
-			CardType.TYPE_SPSUMMON,
 		};
 		public static readonly CardType[] TYPE2 = {
 			CardType.TYPE_XYZ,
 			CardType.TYPE_SYNCHRO,
-			CardType.TYPE_PENDULUM,
+//          CardType.TYPE_SPSUMMON,
+            CardType.TYPE_PENDULUM,
 			
 			CardType.TYPE_SPIRIT,
 			CardType.TYPE_UNION,
 			CardType.TYPE_DUAL,
 			CardType.TYPE_FLIP,
 			CardType.TYPE_TOON,
-		};
+        };
 		public static readonly CardType[] TYPE2_10 = {
 			CardType.TYPE_XYZ,
 			CardType.TYPE_SYNCHRO,
-			CardType.TYPE_PENDULUM,
+//          CardType.TYPE_SPSUMMON,
+            CardType.TYPE_PENDULUM,
 			
 			CardType.TYPE_SPIRIT,
 			CardType.TYPE_UNION,
 			CardType.TYPE_DUAL,
 			CardType.TYPE_FLIP,
 			CardType.TYPE_TOON,
-			CardType.TYPE_SPSUMMON,
 		};
 		public static readonly CardType[] TYPE3 ={
 			CardType.TYPE_SYNCHRO,
-			CardType.TYPE_PENDULUM,
+//          CardType.TYPE_SPSUMMON,
+            CardType.TYPE_PENDULUM,
 			
 			CardType.TYPE_SPIRIT,
 			CardType.TYPE_UNION,
 			CardType.TYPE_DUAL,
 			CardType.TYPE_FLIP,
 			CardType.TYPE_TOON,
-		};
+        };
 		public static readonly CardType[] TYPE3_10 ={
 			CardType.TYPE_SYNCHRO,
-			CardType.TYPE_PENDULUM,
+//          CardType.TYPE_SPSUMMON,
+            CardType.TYPE_PENDULUM,
 			
 			CardType.TYPE_SPIRIT,
 			CardType.TYPE_UNION,
 			CardType.TYPE_DUAL,
 			CardType.TYPE_FLIP,
 			CardType.TYPE_TOON,
-			CardType.TYPE_SPSUMMON,
 		};
 		public static readonly CardType[] TYPE4 ={
 			CardType.TYPE_TUNER,
 			CardType.TYPE_EFFECT,
-//			CardType.TYPE_NORMAL,
+			CardType.TYPE_NORMAL,
 		};
 		
 		public static readonly CardType[] TYPE4_10 ={
@@ -157,7 +160,7 @@ namespace DataEditorX.Core.Info
 			CardType.TYPE_EFFECT,
 			CardType.TYPE_NORMAL,
 		};
-		public static CardType[] GetMonsterTypes(long type,bool no10=false){
+		public static CardType[] GetMonsterTypes(long type,bool no10=true){
 			var list = new List<CardType>(5);
 			var typeList=new List<CardType[]>(5);
 			if(no10){
